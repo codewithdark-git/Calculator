@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
+
+  
+    <title>Calculator</title>
+
+
+</head>
+
+<body>
+    <div id="calculator">
+        <input type="text" id="display" placeholder="00.00" readonly>
+        <div id="buttons">
+           
+            <button class="clear" onclick="clearDisplay()">AC</button>
+            <button class="clear" onclick="removeLast()">del</button>
+            <button class="operator" onclick="buttonClick('/')">/</button>
+            <button class="operator" onclick="buttonClick('*')">*</button>
+            <button class="number" onclick="buttonClick('7')">7</button>
+            <button class="number" onclick="buttonClick('8')">8</button>
+            <button class="number" onclick="buttonClick('9')">9</button>
+            <button class="operator" onclick="buttonClick('+')">+</button>
+            <button class="number" onclick="buttonClick('4')">4</button>
+            <button class="number" onclick="buttonClick('5')">5</button>
+            <button class="number" onclick="buttonClick('6')">6</button>
+            <button class="operator" onclick="buttonClick('-')">-</button>
+            <button class="number" onclick="buttonClick('1')">1</button>
+            <button class="number" onclick="buttonClick('2')">2</button>
+            <button class="number" onclick="buttonClick('3')">3</button>
+            <button class="equals" onclick="calculate()" >=</button>
+            <button class="number" onclick="buttonClick('0')">0</button>
+            <button class="number" onclick="buttonClick('00')">00</button>
+            <button class="number" onclick="buttonClick('.')">.</button>
+            <button class="mode-toggle" onclick="toggleDayNightMode()">
+                <span id="mode-icon" class="bx"></span>
+            </button>
+
+
+
+
+
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
